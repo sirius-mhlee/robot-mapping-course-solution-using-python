@@ -1,7 +1,7 @@
 import numpy as np
 
 def read_sensor(filepath):
-    txt_data = np.genfromtxt(filepath, dtype=np.object)
+    txt_data = np.genfromtxt(filepath, dtype=object)
 
     sensor_data = {'odometry':[], 'sensor':[]}
     sensor_info_between_odometry = []
