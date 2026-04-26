@@ -3,8 +3,9 @@ from matplotlib.patches import Ellipse
 
 import numpy as np
 
-def draw_robot(xvec, color, W, L):
-    x, y, theta = xvec[0, 0], xvec[1, 0], xvec[2, 0]
+
+def draw_robot(mu, color, W):
+    x, y, theta = mu[0, 0], mu[1, 0], mu[2, 0]
 
     e = Ellipse([x, y], W, W, angle=theta, edgecolor=color, fill=False)
     plt.gca().add_artist(e)

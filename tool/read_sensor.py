@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def read_sensor(filepath):
     txt_data = np.genfromtxt(filepath, dtype=object)
 
