@@ -36,8 +36,6 @@ def draw_probability_ellipse(mean, covariance, color):
 
 
 def plot_state(mu, sigma, landmarks, timestep, observed_landmarks, z):
-    plt.title('EKF SLAM timestep {}'.format(timestep))
-
     plt.plot(landmarks['x'], landmarks['y'], 'k+', markersize=10, linewidth=5)
 
     draw_probability_ellipse(mu[0:3], sigma[0:3, 0:3], 'r')

@@ -8,8 +8,6 @@ from draw_robot import *
 
 
 def plot_state(mu, landmarks, timestep, z):
-    plt.title('Tutorial timestep {}'.format(timestep))
-
     plt.plot(landmarks['x'], landmarks['y'], 'kP', markersize=10, linewidth=5)
 
     for i in range(len(z)):
